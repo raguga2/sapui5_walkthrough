@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+ <!-- головка -->
+<head>
+    <!-- mata используется для хранения информации предназначенной для браузеров и поисковых систем
+    Атрибут charset создается для кодировку документа.-->
+    <meta charset="utf-8">
+    <!-- Задает заголовок сайта.-->
+    <title> SAPUI5 Walkthrough</title>
+    
+   <!-- мы загружаем фреймворк SAPUI5 с нашего локального веб-сервера
+    Атрибут src тега <script> сообщает браузеру, где найти базовую библиотеку SAPUI5  и загружает в библиотеке, указанной в атрибуте data-sap-ui-libs.Элементы управления SAPUI5 поддерживают разные темы, мы выбираем sap_belize в качестве темы по умолчанию.
+data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index" - скрипт подключает фреймворк.-->
+    <script
+		id="sap-ui-bootstrap"
+		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_belize"
+		data-sap-ui-libs="sap.m"
+	   data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true"
+		data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index"
+		data-sap-ui-resourceroots='{
+			"sap.ui.demo.walkthrough": "./"
+		}'>
+
+	</script>
+</head>
+<!-- создаем класс,который добавляет дополнительные зависящие от темы стили для отображения приложений SAPUI, в теле и задаем id-->
+<body class="sapUiBody" id="content">
+    </body>
+</html>
+ 
